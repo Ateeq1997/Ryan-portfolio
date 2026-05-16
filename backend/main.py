@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -7,9 +8,24 @@ from pydantic import BaseModel, EmailStr, Field
 
 app = FastAPI(title='Signal Atelier API', version='1.0.0')
 
+vercel_url = os.getenv('VERCEL_URL', '')
+allowed_origins = [
+    'http://127.0.0.1:5173',
+    'http://localhost:5173',
+]
+
+if vercel_url:
+    allowed_origins.extend(
+        [
+            f'https://{vercel_url}',
+            f'http://{vercel_url}',
+        ]
+    )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['http://127.0.0.1:5173', 'http://localhost:5173'],
+    allow_origins=allowed_origins,
+    allow_origin_regex=r'https://.*\.vercel\.app',
     allow_credentials=True,
     allow_methods=['*'],
     allow_headers=['*'],

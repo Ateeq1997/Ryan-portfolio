@@ -14,8 +14,11 @@ A modern, dark-mode portfolio concept for a fictional senior full-stack engineer
 ## Project Structure
 
 - `src/` contains the React interface and styling
+- `api/index.py` is the Vercel Python serverless entrypoint
 - `backend/` contains the FastAPI app
 - `backend/portfolio_content.json` contains the editable portfolio content served by `/api/profile`
+- `vercel.json` configures frontend + backend deployment on Vercel
+- `requirements.txt` at the repo root is used by Vercel's Python runtime
 - `.github/copilot-instructions.md` stores workspace guidance
 
 ## Run It
@@ -45,6 +48,32 @@ npm run dev
 ```
 
 The React app runs on `http://localhost:5173` and proxies API requests to `http://127.0.0.1:8000`.
+
+## Deploy To Vercel
+
+This project is configured for Vercel with two services:
+
+- a static Vite frontend build
+- a Python serverless API for FastAPI routes under `/api/*`
+
+Files used for deployment:
+
+- `vercel.json`
+- `api/index.py`
+- `requirements.txt`
+
+Deployment flow:
+
+1. Import the repository into Vercel.
+2. Keep the framework as `Other` if Vercel does not auto-detect the mixed setup.
+3. Vercel will build the frontend from `package.json` and serve the FastAPI app through `api/index.py`.
+4. All `/api/*` requests are routed to the Python backend and all other routes fall back to the frontend app.
+5. The frontend and backend run under the same Vercel deployment, so frontend requests to `/api/profile` and `/api/contact` work without changing the React code.
+
+Notes:
+
+- `backend/main.py` allows local development origins plus Vercel preview and production domains.
+- `.vercelignore` keeps large local folders like `.venv`, `node_modules`, and `dist` out of the upload.
 
 ## Editing Content
 
