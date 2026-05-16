@@ -1,0 +1,13 @@
+- Verify that the copilot-instructions.md file in the .github directory is created.
+- Clarify project requirements if they are not already known.
+- Scaffold the project with the current directory as the root.
+- Customize the project to match the requested portfolio style.
+- Install required extensions only if project setup guidance specifies them.
+- Compile the project and resolve issues.
+- Create and run a task if the project needs one.
+- Launch the project only after confirming debug mode.
+- Ensure README.md and this file stay current.
+- Keep the checklist updated as the project evolves.
+- Work through each checklist item systematically.
+- Keep communication concise and focused.
+- Follow development best practices.

@@ -1,0 +1,205 @@
+{
+  "profile": {
+    "badge": "Senior Full Stack Engineer · Austin, TX",
+    "name": "Ryan Carter",
+    "headline": "Turning complex problems into elegant, scalable software.",
+    "summary": "I build full-stack products that handle real-world complexity — from SaaS platforms serving thousands of users to developer tools that make teams more productive. My stack is React, Next.js, TypeScript, and Node.js with Go for performance-critical services.",
+    "stats": [
+      { "value": 6, "suffix": "+", "label": "Years of Experience" },
+      { "value": 40, "suffix": "+", "label": "Projects Shipped" },
+      { "value": 15, "suffix": "", "label": "Happy Clients" }
+    ]
+  },
+  "socials": {
+    "github": "https://github.com/ryancarterdev",
+    "linkedin": "https://www.linkedin.com/in/ryan-carter-dev",
+    "email": "mailto:ryan@ryanbuilds.dev"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Nexus",
+      "category": "Team Collaboration",
+      "tag": "SaaS",
+      "description": "Real-time workspace with channels, threads, and file sharing. Built to handle 10k+ concurrent users with WebSocket connections and Redis pub/sub for instant message delivery.",
+      "tech": ["React", "Node.js", "WebSockets", "Redis"],
+      "year": "2024",
+      "link": "https://nexus-workspace.example.com",
+      "accent": "#6366f1",
+      "gradient": "radial-gradient(ellipse at top left, rgba(99,102,241,0.4) 0%, rgba(139,92,246,0.2) 60%, transparent 100%)"
+    },
+    {
+      "id": 2,
+      "title": "Budgetly",
+      "category": "Fintech SaaS",
+      "tag": "SaaS",
+      "description": "Personal finance app with bank sync, spending analytics, and budget goals. Integrates with 10,000+ financial institutions via the Plaid API and visualises data with D3.js.",
+      "tech": ["Next.js", "PostgreSQL", "Plaid API", "Prisma"],
+      "year": "2024",
+      "link": "https://budgetly-app.example.com",
+      "accent": "#10b981",
+      "gradient": "radial-gradient(ellipse at top left, rgba(16,185,129,0.4) 0%, rgba(6,182,212,0.2) 60%, transparent 100%)"
+    },
+    {
+      "id": 3,
+      "title": "Deploykit",
+      "category": "Developer Tool",
+      "tag": "Tool",
+      "description": "Visual CI/CD dashboard with live pipeline status, deployment history, log streaming, and Slack/Teams notifications. Supports GitHub Actions, GitLab CI, and CircleCI.",
+      "tech": ["Vue.js", "Go", "Docker", "WebSockets"],
+      "year": "2023",
+      "link": "https://deploykit.example.com",
+      "accent": "#f59e0b",
+      "gradient": "radial-gradient(ellipse at top left, rgba(245,158,11,0.4) 0%, rgba(239,68,68,0.2) 60%, transparent 100%)"
+    },
+    {
+      "id": 4,
+      "title": "Storely",
+      "category": "E-Commerce Platform",
+      "tag": "E-Commerce",
+      "description": "Multi-vendor marketplace with Stripe Connect payouts, inventory tracking, and a configurable storefront builder. Onboarded 200+ vendors within 6 months of launch.",
+      "tech": ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
+      "year": "2023",
+      "link": "https://storely-marketplace.example.com",
+      "accent": "#ec4899",
+      "gradient": "radial-gradient(ellipse at top left, rgba(236,72,153,0.4) 0%, rgba(168,85,247,0.2) 60%, transparent 100%)"
+    },
+    {
+      "id": 5,
+      "title": "MedSync",
+      "category": "Healthcare App",
+      "tag": "App",
+      "description": "Appointment booking and management system for clinics, with patient portals, automated SMS reminders, EHR integration, and insurance verification flows.",
+      "tech": ["React", "Node.js", "MongoDB", "Twilio"],
+      "year": "2022",
+      "link": "https://medsync-clinic.example.com",
+      "accent": "#06b6d4",
+      "gradient": "radial-gradient(ellipse at top left, rgba(6,182,212,0.4) 0%, rgba(59,130,246,0.2) 60%, transparent 100%)"
+    },
+    {
+      "id": 6,
+      "title": "Craftboard",
+      "category": "Productivity SaaS",
+      "tag": "SaaS",
+      "description": "Kanban and sprint planning tool for creative teams — with time tracking, client billing, file proofing workflows, and automated weekly progress reports.",
+      "tech": ["React", "TypeScript", "PostgreSQL", "Redis"],
+      "year": "2022",
+      "link": "https://craftboard.example.com",
+      "accent": "#f97316",
+      "gradient": "radial-gradient(ellipse at top left, rgba(249,115,22,0.4) 0%, rgba(245,158,11,0.2) 60%, transparent 100%)"
+    }
+  ],
+  "capabilities": [
+    {
+      "icon": "code",
+      "label": "React & Next.js",
+      "desc": "Component architecture, SSR/SSG, performance optimisation, and pixel-perfect UI implementation from Figma to production."
+    },
+    {
+      "icon": "zap",
+      "label": "TypeScript",
+      "desc": "Strict type-safe codebases across frontend and backend — fewer bugs, better DX, and confident refactors."
+    },
+    {
+      "icon": "server",
+      "label": "Node.js & Go",
+      "desc": "High-throughput APIs, background workers, WebSocket servers, and microservices built for production scale."
+    },
+    {
+      "icon": "cloud",
+      "label": "Cloud & DevOps",
+      "desc": "AWS infrastructure, Docker containers, CI/CD pipelines, Terraform IaC, and zero-downtime deployments."
+    },
+    {
+      "icon": "layers",
+      "label": "Database Design",
+      "desc": "Relational schemas in PostgreSQL, caching with Redis, document stores in MongoDB — chosen for the right job."
+    },
+    {
+      "icon": "globe",
+      "label": "API Design",
+      "desc": "RESTful APIs, GraphQL schemas, real-time WebSockets, and OpenAPI documentation that developers love."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Senior Full Stack Engineer",
+      "company": "Horizon Cloud",
+      "period": "Sep 2023 – Present",
+      "type": "FULL-TIME",
+      "desc": "Leading feature development on the core platform — shipping React + TypeScript frontend improvements, Node.js microservices, and driving architecture decisions across a 20-person engineering team.",
+      "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Loopline Inc.",
+      "period": "Jun 2021 – Aug 2023",
+      "type": "FULL-TIME",
+      "desc": "Early-stage SaaS startup — built core product from 0 to $1M ARR. Owned the entire frontend, designed and maintained REST APIs, and helped grow the engineering team from 2 to 8.",
+      "tech": ["Next.js", "Go", "PostgreSQL", "Redis", "Stripe"]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Pixel Cabin",
+      "period": "Feb 2020 – May 2021",
+      "type": "FULL-TIME",
+      "desc": "Digital agency building bespoke sites and apps for US-based clients. Delivered 15+ projects across e-commerce, marketing, and internal tooling using React and Next.js.",
+      "tech": ["React", "Next.js", "Tailwind CSS", "Shopify"]
+    },
+    {
+      "role": "Junior Developer",
+      "company": "NexaTech",
+      "period": "Jun 2019 – Jan 2020",
+      "type": "FULL-TIME",
+      "desc": "First professional role — built and maintained internal web tools, wrote REST API integrations, and gained hands-on experience with agile development practices.",
+      "tech": ["JavaScript", "React", "Node.js", "MySQL"]
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Understand",
+      "text": "Map out business goals, user needs, and technical constraints before writing a single line of code."
+    },
+    {
+      "step": "02",
+      "title": "Design",
+      "text": "Plan the architecture, data models, API contracts, and component structure. Decisions on paper save days of rework."
+    },
+    {
+      "step": "03",
+      "title": "Build",
+      "text": "Ship incrementally with tests, code reviews, and clear git history — readable code is part of the product."
+    },
+    {
+      "step": "04",
+      "title": "Ship & Monitor",
+      "text": "Deploy with CI/CD, instrument with observability, and iterate based on real usage data — not assumptions."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Ryan rebuilt our entire frontend in 6 weeks without a single production incident. The new architecture is clean, fast, and our team loves working in it.",
+      "author": "Alex Torres",
+      "role": "CTO, Loopline Inc.",
+      "stars": 5
+    },
+    {
+      "quote": "One of the sharpest engineers I've worked with. He ships fast without cutting corners — and always thinks about the next engineer who'll maintain the code.",
+      "author": "Jordan Lee",
+      "role": "Engineering Manager, Horizon Cloud",
+      "stars": 5
+    },
+    {
+      "quote": "Brought our MVP from idea to production in 3 months, on budget. Exactly the kind of full-stack generalist an early-stage startup needs.",
+      "author": "Mila Park",
+      "role": "Co-founder, Craftboard",
+      "stars": 5
+    }
+  ],
+  "contact": {
+    "email": "ryan@ryanbuilds.dev",
+    "location": "Austin, TX · Remote-first",
+    "availability": "Open to senior roles and consulting"
+  }
+}
