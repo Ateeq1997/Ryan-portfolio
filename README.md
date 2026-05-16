@@ -18,7 +18,7 @@ A modern, dark-mode portfolio concept for a fictional senior full-stack engineer
 - `backend/` contains the FastAPI app
 - `backend/portfolio_content.json` contains the editable portfolio content served by `/api/profile`
 - `vercel.json` configures frontend + backend deployment on Vercel
-- `requirements.txt` at the repo root is used by Vercel's Python runtime
+- `requirements.txt` at the repo root is used by Vercel's Python runtime and must contain explicit package lines
 - `.github/copilot-instructions.md` stores workspace guidance
 
 ## Run It
